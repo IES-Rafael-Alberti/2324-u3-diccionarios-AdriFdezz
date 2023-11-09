@@ -10,7 +10,7 @@ def gestionar_facturas(facturas, total_cobrado, opcion, numero_factura, coste):
 
     if opcion == "nueva":
         facturas[numero_factura] = coste
-        mensaje = "Factura añadida."
+        mensaje = "Factura añadida.\n"
 
     elif opcion == "pagar":
         if numero_factura in facturas:
@@ -33,12 +33,13 @@ if __name__ == "__main__":
 
     while opcion != "fin":
         print("")
+        print("-----------------------------------------------------")
         print("Gestion de Facturas")
         print("nueva - Añadir nueva factura")
         print("pagar - Pagar factura existente")
         print("fin - Terminar programa")
+        print("-----------------------------------------------------")
         opcion = input("Selecciona una opcion (nueva/pagar/fin): ")
-        print("")
 
         if opcion == "nueva":
             numero_factura = input("Introduce el numero de factura: ")
