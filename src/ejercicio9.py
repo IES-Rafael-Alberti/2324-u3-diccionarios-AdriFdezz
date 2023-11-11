@@ -6,6 +6,23 @@
 #Después de cada operación el programa debe mostrar por pantalla la cantidad cobrada hasta el momento y la cantidad pendiente de cobro.
 
 def gestionar_facturas(facturas, total_cobrado, opcion, numero_factura, coste):
+    """
+    Gestiona las facturas pendientes de cobro de una empresa.
+
+    Esta función toma un diccionario de facturas, el total cobrado hasta el momento, una opción
+    (nueva o pagar), el número de factura y el coste, y realiza las operaciones correspondientes.
+
+    Args:
+        facturas (dict): Un diccionario que almacena las facturas pendientes, donde la clave es el número de factura y el valor es el coste.
+        total_cobrado (float): El total cobrado hasta el momento.
+        opcion (str): La opción seleccionada (nueva para agregar una nueva factura, pagar para pagar una factura existente).
+        numero_factura (str): El número de factura relacionado con la operación.
+        coste (float): El coste de la factura.
+
+    Returns:
+        tuple: Una tupla con tres elementos: un mensaje que describe el resultado de la operación,
+               un mensaje que muestra la cantidad cobrada hasta el momento y un mensaje que muestra la cantidad pendiente de cobro.
+    """
     mensaje = ""
 
     if opcion == "nueva":

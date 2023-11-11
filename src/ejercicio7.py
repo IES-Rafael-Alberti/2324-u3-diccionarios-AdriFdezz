@@ -10,6 +10,12 @@
 #Total	Coste
 
 def imprimir_cesta_compra():
+    """
+    Crea una cesta de compra vacía como un diccionario.
+
+    Returns:
+        dict: Un diccionario que representa una cesta de compra vacía.
+    """
     cesta_compra = {}
     return cesta_compra
 

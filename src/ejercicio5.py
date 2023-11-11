@@ -3,6 +3,18 @@
 #Al final debe mostrar también el número total de créditos del curso.
 
 def mostrar_creditos(creditos_asignaturas):
+    """
+    Calcula el total de créditos en un conjunto de asignaturas.
+
+    Esta función toma un diccionario que contiene asignaturas y la cantidad de créditos asignados a cada una.
+    Calcula y devuelve el número total de créditos sumando los créditos de todas las asignaturas.
+
+    Args:
+        creditos_asignaturas (dict): Un diccionario que mapea el nombre de la asignatura a la cantidad de créditos.
+
+    Returns:
+        int: El número total de créditos del conjunto de asignaturas.
+    """
     total_creditos = sum(creditos_asignaturas.values())
     return total_creditos
 

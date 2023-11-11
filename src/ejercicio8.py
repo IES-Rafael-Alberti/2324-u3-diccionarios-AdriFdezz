@@ -5,6 +5,20 @@
 #Si una palabra no está en el diccionario debe dejarla sin traducir.
 
 def traducir_frase(diccionario, frase):
+    """
+    Traduce una frase de español a inglés utilizando un diccionario de traducción.
+
+    Esta función toma un diccionario de traducción y una frase en español. Divide la frase en palabras,
+    busca cada palabra en el diccionario y la traduce al inglés. Si una palabra no está en el diccionario,
+    se mantiene sin cambios en la frase traducida.
+
+    Args:
+        diccionario (dict): Un diccionario que mapea palabras en español a sus traducciones en inglés.
+        frase (str): La frase en español que se desea traducir.
+
+    Returns:
+        str: La frase traducida al inglés, donde las palabras traducidas se sustituyen y las no traducidas se mantienen igual.
+    """
     palabras = frase.split()
     frase_traducida = []
 

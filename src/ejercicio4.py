@@ -2,6 +2,19 @@
 #la misma fecha en formato dd de <mes> de aaaa donde <mes> es el nombre del mes.
 
 def formato_fecha(fecha_str):
+    """
+    Formatea una fecha en formato dd/mm/aaaa a una representación legible.
+
+    Esta función toma una cadena de fecha en el formato 'dd/mm/aaaa' y la convierte en una representación legible,
+    donde el mes se muestra en palabras.
+
+    Args:
+        fecha_str (str): La cadena de fecha en formato 'dd/mm/aaaa'.
+
+    Returns:
+        str: La fecha formateada en formato 'dia de mes de año' si la entrada es válida,
+             o un mensaje que indica que la fecha no es válida.
+    """
     partes = fecha_str.split('/')
 
     if len(partes) == 3:

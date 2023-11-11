@@ -2,6 +2,21 @@
 #Después debe mostrar por pantalla el mensaje <nombre> tiene <edad> años, vive en <dirección> y su número de teléfono es <teléfono>.
 
 def informacion_usuario(nombre, edad, direccion, telefono):
+    """
+    Crea un mensaje con información del usuario a partir de sus datos personales.
+
+    Esta función toma el nombre, edad, dirección y número de teléfono del usuario
+    y genera un mensaje que proporciona detalles sobre el usuario.
+
+    Args:
+        nombre (str): El nombre del usuario.
+        edad (str): La edad del usuario.
+        direccion (str): La dirección del usuario.
+        telefono (str): El número de teléfono del usuario.
+
+    Returns:
+        str: Un mensaje que incluye el nombre, edad, dirección y número de teléfono del usuario.
+    """
     usuario = {
         'nombre': nombre,
         'edad': edad,
